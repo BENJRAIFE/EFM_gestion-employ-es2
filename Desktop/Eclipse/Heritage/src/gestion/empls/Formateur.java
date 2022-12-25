@@ -1,10 +1,9 @@
 package gestion.empls;
-import java.sql.Date;
-import java.time.LocalDate;&&&
+import java.time.LocalDate;
 public class Formateur extends Employe {
 	private double heureSup;
 	private double remunerationHSup;
-	public Formateur(int mtle,String nomString,LocalDate dateDeNaissance,LocalDate DateEmbeauche,double SalaireBase,double heureSup,double remunerationHSup ) {
+	public Formateur(int mtle,String nomString,int dateDeNaissance,int DateEmbeauche,double SalaireBase,double heureSup,double remunerationHSup ) {
 		super(mtle,nomString,dateDeNaissance,DateEmbeauche,SalaireBase);
 		this.heureSup=heureSup;
 		this.remunerationHSup=remunerationHSup;
@@ -38,3 +37,4 @@ public class Formateur extends Employe {
 	"remuneration par heure suplementaire: "+getRemunerationHSup();
 	}
 }
+
